@@ -2,3 +2,29 @@
 
 Project from the youtube tutorial: https://www.youtube.com/watch?v=3681ZYbDSSk&list=FLhftHSLmRN2T2X4F6750wFg&index=0
 Real github repo: https://github.com/dappuniversity/election/tree/2019_update
+
+# Dependencies
+
+NodeJs: JavaScript Runtime
+Npm: Package Manager for the JavaScrpt
+Truffle: Development environment for blockchain dapps
+Ganache: Quickly fire up a personal Ethereum blockchain 
+Metamask: Crypto wallet (browser extension)
+
+ArchLinux like:
+```bash
+sudo pacman -S nodejs
+sudo pacman -S npm 
+npm install -g truffle
+echo "Check: https://www.trufflesuite.com/ganache"
+echo "Check: https://metamask.io/"
+```
+
+Ubuntu like:
+```bash
+sudo apt install nodejs 
+sudo apt install npm 
+npm install -g truffle
+echo "Check: https://www.trufflesuite.com/ganache"
+echo "Check: https://metamask.io/"
+```
