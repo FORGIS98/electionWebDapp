@@ -30,3 +30,11 @@ npm install -g truffle
 echo "Check: https://www.trufflesuite.com/ganache"
 echo "Check: https://metamask.io/"
 ```
+
+# Commands and Info
+
+Interesting fact, the 1 time you deploy you use `truffle migrate` then next times you should use `truffle migrate --reset`
+
+Usefull command: `truffle console`
+Usefull command (inside truffle console): `Election.deployed().then(function(instance){app = instance;})`
+Usefull command (inside truffle console): `web3.<tab>`
