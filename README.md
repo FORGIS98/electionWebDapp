@@ -37,6 +37,8 @@ echo "Check: https://metamask.io/"
 
 First download the repo, and inside run `npm install` (this should install all the dependencies). Then you need `ganache` running on `localhost:8545` (should be the defualt option so no big deal). Then run `truffle migrate` and after the compilation run `npm run dev`.  This should open a browser with this page:
 
+![Home Page](https://github.com/FORGIS98/electionWebDapp/blob/master/pics/ElectionResults.png)
+
 After you open `metamask` and change the network to `localhost:8545` then import an account from `ganache` using the private key of the account you want. Then reload the page, and you should be ready to vote...Hope it works :/
 
 
