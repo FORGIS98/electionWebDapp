@@ -11,8 +11,11 @@ contract Election { // Contract declaration
   }
 
   // Mapping (is like a Hash Map in Java or diccionary in Python)
-  // Here we store all candidates struc
+  // Store all candidates struc
   mapping(uint => Candidate) public candidates; // id => candidate
+
+  // Store accounts that have voted
+  mapping(address => bool) public voters;
 
   // Amount of candidates (it will help with the mapping)
   // (We can't iterate on mappìngs)
@@ -30,5 +33,19 @@ contract Election { // Contract declaration
   function addCandidate(string memory _name) private {
     candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     candidatesCount += 1;
+  }
+
+  function vote(uint _candidateId) public {
+
+    // Require that the voter haven't vote yet.
+    require(!voters[msg.sender]);
+    // Require that the candidate is valid
+    require(_candidateId >= 0 && _candidateId < candidatesCount);
+
+    // Record that a voter has voted (we only want them to vote 1 time)
+    voters[msg.sender] = true;
+  
+    // Add a vote to a candidate
+    candidates[_candidateId].voteCount += 1;
   }
 }
