@@ -10,6 +10,11 @@ contract Election { // Contract declaration
     uint voteCount;
   }
 
+  // EVENT //
+  // An event will let us "save" info in the blcockchain (readable info, not transactions hash or address, more like human readable info)
+
+  event votedEvent(uint indexed _candidateId);
+
   // Mapping (is like a Hash Map in Java or diccionary in Python)
   // Store all candidates struc
   mapping(uint => Candidate) public candidates; // id => candidate
@@ -47,5 +52,8 @@ contract Election { // Contract declaration
   
     // Add a vote to a candidate
     candidates[_candidateId].voteCount += 1;
+
+    // Trugger voted event
+    emit votedEvent(_candidateId);
   }
 }
