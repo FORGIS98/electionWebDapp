@@ -2,7 +2,7 @@
 
 This project is from a January 2018 video on youtube by Dapp University channel, after 2 and a half years solidity versions has changed so this isn't going to be a 100% equal to the code in the video (but close enough).
 
-Youtube tutorial video: https://www.youtube.com/watch?v=3681ZYbDSSk&list=FLhftHSLmRN2T2X4F6750wFg&index=0
+Youtube tutorial video: https://www.youtube.com/watch?v=3681ZYbDSSk&list=FLhftHSLmRN2T2X4F6750wFg&index=0  
 Oficial github repo: https://github.com/dappuniversity/election/tree/2019_update
 
 
